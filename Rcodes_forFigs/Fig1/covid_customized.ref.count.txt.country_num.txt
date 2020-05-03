@@ -1,0 +1,32 @@
+South Africa	1
+Australia	51
+Belgium	2
+Brazil	2
+China	50
+Colombia	1
+Finland	1
+France	42
+Greece	4
+India	5
+Iran	17
+Iraq	1
+Israel	2
+Italy	41
+Japan	4
+South Korea	4
+Malaysia	3
+Viet Nam	6
+Nepal	1
+Nigeria	2
+Pakistan	3
+Peru	1
+Philippines	4
+Serbia	1
+Spain	72
+Sweden	1
+Taiwan	3
+Thailand	2
+Tunisia	6
+Turkey	1
+UK	48
+USA	50

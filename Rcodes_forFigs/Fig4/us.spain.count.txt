@@ -1,0 +1,4 @@
+gene	count
+S protein	517
+ORF1a	1687
+other	168

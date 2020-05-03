@@ -1,0 +1,3 @@
+gene	count
+S protin	17
+ORF1a	0
