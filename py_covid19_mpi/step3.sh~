@@ -1,6 +1,0 @@
-folder=$1
-cd $1
-python=$2
-$python covid_hits_statistics_forFig.py
-
-
