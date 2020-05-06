@@ -1,0 +1,31 @@
+   1 Colombia
+   1 Finland
+   1 France
+   1 Iraq
+   1 Nepal
+   1 Peru
+   1 South Africa
+   1 Sweden
+   1 Turkey
+   2 Belgium
+   2 Brazil
+   2 Israel
+   2 Nigeria
+   2 Thailand
+   3 
+   3 Japan
+   3 Malaysia
+   3 Pakistan
+   3 Taiwan
+   4 Greece
+   4 India
+   4 Philippines
+   4 South Korea
+   6 Tunisia
+   6 Viet Nam
+   7 Australia
+   7 Italy
+  17 Iran
+  24 Spain
+  96 China
+ 873 USA

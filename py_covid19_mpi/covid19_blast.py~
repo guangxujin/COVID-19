@@ -1,0 +1,35 @@
+from load import *
+import config
+import sys
+###############################################                                                  
+# BLAST of covid19 sequences to BetaCoronavirus                                                 
+###############################################                                                                                                                                                                                       
+print('{}|Identifying fastq files from {} ...'.format(gettime(),config.fastq_data_dir))
+'''
+#@ author                                                                                                                                                                                                 
+#Guangxu Jin, Ph.D.                                                                                                                                                                                        
+#Wake Forest School of Medicine                                                                                                                                                                 
+# Email: guangxujin@gmail.com                                                                                                                                                                              
+'''                           
+
+print('{}|Identifying fastq files from {} ...'.format(gettime(),config.fastq_data_dir))
+
+import config
+mkdir(config.fastq_folder)
+cmd='gsutil -m cp -r '+config.fastq_data_dir+' '+config.fastq_folder+'/'
+os.system(cmd) 
+tasks=len(glob.glob(config.fastq_folder+'/*fasta')) #folder for sams
+codes=config.HOME+"py_covid"
+cp_config(codes)
+
+print
+print('{}|1::Blast sequences to Betacoronavirus for the samples in {}...'.format(gettime(),config.cell))
+print
+
+import config
+delete_mk_output(config.cov_hits)
+os.system('bash step1.sh '+codes+' '+config.python_dir+' '+str(tasks)+' '+config.usr) ### change column number for sam file                                   
+print_bar_sbatch(tasks,config.sam_out_dir+'/cellnumid_kmer/cells_statistics')
+#os.system('rm -r '+config.sam_out_dir+'/sam_ekmer')
+#os.system('gsutil -m cp -r '+config.sam_out_dir+' '+config.gc_expression_out+'/')
+#os.system('rm -r '+config.sam_out_dir)
