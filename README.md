@@ -7,7 +7,7 @@ update config.py
 
 python step1.blast.py
 
-## Blast multiple fastq (Google Cloud Slurm version)
+## Blast multiple fastqs (Google Cloud Slurm version)
 
 cd py_covid19_mpi
 
